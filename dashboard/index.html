@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klinik Mitra Tamzil</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favikon.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="dashboard">
+        <div class="dashboard-side">
+            <div class="dashboard-logo">
+                <a href="#">
+                    <img src="assets/icons/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="dashboard-menu">
+                <ul class="list-menu">
+                    <li class="list-link active"><a href="#">
+                            <img src="assets/icons/dashboard.svg" alt="">
+                            <p class="text-link">Dashboard</p>
+                        </a></li>
+                    <li class="list-link"><a href="#">
+                            <img src="assets/icons/bpjs.svg" alt="">
+                            <p class="text-link">Vclaim Bridging</p>
+                        </a></li>
+                    <li class="list-link"><a href="#">
+                            <img src="assets/icons/sehat.svg" alt="">
+                            <p class="text-link">SATUSEHAT</p>
+                        </a></li>
+                    <li class="list-link"><a href="#">
+                            <img src="assets/icons/directions_run.svg" alt="">
+                            <p class="text-link">Rawat Jalan</p>
+                        </a></li>
+                    <li class="list-link"><a href="#">
+                            <img src="assets/icons/bed.svg" alt="">
+                            <p class="text-link">Rawat Inap</p>
+                        </a></li>
+                    <li class="list-link"><a href="#">
+                            <img src="assets/icons/bus.svg" alt="">
+                            <p class="text-link">IGD</p>
+                        </a></li>
+                    <li class="list-link"><a href="#">
+                            <img src="assets/icons/inventory_2.svg" alt="">
+                            <p class="text-link">Persediaan</p>
+                        </a></li>
+                    <li class="list-link"><a href="#">
+                            <img src="assets/icons/work_history.svg" alt="">
+                            <p class="text-link">Stock Opname</p>
+                        </a></li>
+                    <li class="list-link"><a href="#">
+                            <img src="assets/icons/point_of_sale.svg" alt="">
+                            <p class="text-link">Kasir</p>
+                        </a></li>
+                    <li class="list-link"><a href="#">
+                            <img src="assets/icons/settings.svg" alt="">
+                            <p class="text-link">Pengaturan</p>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="dashboard-content">
+            <div class="content-top">
+                <div class="notifications">
+                    <img src="assets/icons/notifications.svg" alt="">
+                </div>
+                <div class="profile">
+                    <div class="img-circle">
+                        <h1>B</h1>
+                    </div>
+                    <div class="profile-name">
+                        <div class="name">
+                            <h4>Ilham Bintang</h4>
+                            <i class='bx bx-chevron-down'></i>
+                        </div>
+                        <div class="user-profile">
+                            <h5>Admin</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-real">
+                <div class="button-dashboard">
+                    <button class="btn-fillter"><p>Hari Ini</p> <i class='bx bx-chevron-down'></i></button>
+                    <button class="btn-export"><i class='bx bx-download'></i> <p>Export</p> </button>
+                </div>
+                <div class="content-data">
+                    <div class="content-data-list">
+                        <div class="content-data-link kunjungan">
+                            <img src="assets/icons/person-circled.svg" alt="">
+                            <div class="text-content-data">
+                                <p>Total Kunjungan</p>
+                                <h3>100</h3>
+                            </div>
+                        </div>
+                        <div class="content-data-link jalan">
+                            <img src="assets/icons/walking-circled.svg" alt="">
+                            <div class="text-content-data">
+                                <p>Rawat Jalan</p>
+                                <h3>100</h3>
+                            </div>
+                        </div>
+                        <div class="content-data-link inap">
+                            <img src="assets/icons/rawatinap-circled.svg" alt="">
+                            <div class="text-content-data">
+                                <p>Rawat Inap</p>
+                                <h3>100</h3>
+                            </div>
+                        </div>
+                        <div class="content-data-link igd">
+                            <img src="assets/icons/ambulance-circled.svg" alt="">
+                            <div class="text-content-data">
+                                <p>IGD</p>
+                                <h3>100</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-chart">
+                    <div class="content-list">
+                        <div class="content-title">
+                            <p>Kunjungans Pasien</p>
+                            <h4>100</h4>
+                        </div>
+                        <div id="content-line-chart">
+                            
+                        </div>
+                    </div>
+                    <div class="content-list">
+                        <div class="content-title">
+                            <h4>Pendaftaran Berdasarkan Status</h4>
+                        </div>
+                        <div id="content-multiline-chart">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="main/main.js"></script>
+</body>
+
+</html>

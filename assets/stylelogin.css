@@ -1,0 +1,159 @@
+@font-face {
+  font-family: general700;
+  src: url("font/OTF/GeneralSans-Semibold.otf");
+}
+
+@font-face {
+  font-family: general500;
+  src: url("font/OTF/GeneralSans-Regular.otf");
+}
+
+:root {
+  /* collor */
+  --bg-collor: #fff;
+  --bg-green: #019f66;
+  --font-black: #393939;
+  --font-black-secondary: #a0a4a8;
+  --border-black: #52575c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.login {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-collor);
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.login-logo img {
+  width: 211px;
+  height: 149px;
+  margin-bottom: 45px;
+}
+
+.login-content h3 {
+  color: var(--font-black);
+  /* H2 - bold 40 (46, 0.2px) */
+  font-family: General700;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 46px; /* 115% */
+  letter-spacing: 0.2px;
+  margin-bottom: 16px;
+}
+
+.login-form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+label {
+  color: #393939;
+  /* Subtitle 1 - bold 16 (24, 0.1px) */
+  font-family: General Sans Variable;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.1px;
+}
+
+input {
+  padding: 14px 22px;
+  border-radius: 4px;
+  width: 500px;
+
+  color: var(--border-black);
+  border: 1px solid #52575c;
+}
+
+.input-password {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-password i {
+  position: absolute;
+  right: 20px;
+  font-size: 18px;
+}
+
+.login-content p {
+  color: var(--neutral-gray-dark, #52575c);
+  /* H6 - regular 18 (24, 0.1px) */
+  font-family: General500;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+  letter-spacing: 0.1px;
+  margin-top: 80px;
+}
+
+input::placeholder {
+  color: #a0a4a8;
+}
+
+.btn-idrole {
+  padding: 10px 34px;
+  font-size: 14px;
+  border: none;
+  background-color: #019f66;
+  color: var(--bg-collor);
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  font-family: General500;
+}
+
+.daftar{
+  margin-top: 16px !important;
+}
+
+.daftar a{
+  color: var(--bg-green);
+}
+
+.idrole i{
+  left: 20px !important;
+  font-size: 22px !important;
+  color: var(--font-black) !important;
+  z-index: 0;
+}
+
+.idroleinput{
+  padding-left: 55px !important;
+  z-index: 1;
+  background-color: transparent;
+}
