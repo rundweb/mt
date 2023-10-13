@@ -2,9 +2,9 @@ var options = {
   chart: {
     height: 280,
     type: "area",
-    toolbar:{
-        show: false,
-    }
+    toolbar: {
+      show: false,
+    },
   },
   series: [
     {
@@ -15,10 +15,10 @@ var options = {
   xaxis: {
     categories: ["08:00", "09:00", "12:00", "15:00", "18:00", "21:00"],
   },
-  dataLabels:{
+  dataLabels: {
     enabled: true,
-    style:{
-        fontSize : '10px',
+    style: {
+      fontSize: "10px",
     },
   },
 };
@@ -64,7 +64,7 @@ var options2 = {
       show: false,
     },
   },
-  colors: ["#EB4755", "#FF722C","#0060A3", "#2DBE78"],
+  colors: ["#EB4755", "#FF722C", "#0060A3", "#2DBE78"],
   dataLabels: {
     enabled: true,
   },
@@ -82,23 +82,22 @@ var options2 = {
   markers: {
     size: 1,
   },
-  dataLabels:{
+  dataLabels: {
     enabled: true,
-    style:{
-        fontSize : '10px',
+    style: {
+      fontSize: "10px",
     },
   },
   xaxis: {
     categories: ["a1", "a2", "a3", "a4"],
-    
   },
 
   legend: {
-    position: 'bottom',
-    horizontalAlign: 'center',
-    itemMargin:{
-        horizontal:30,
-    }
+    position: "bottom",
+    horizontalAlign: "center",
+    itemMargin: {
+      horizontal: 30,
+    },
   },
 };
 
@@ -107,3 +106,52 @@ var chart2 = new ApexCharts(
   options2
 );
 chart2.render();
+
+var options3 = {
+  series: [
+    {
+      name: "",
+      data: [5200, 2900, 2200 , 1900, 1200],
+    },
+  ],
+  chart: {
+    type: "bar",
+    height: 480,
+  },
+  plotOptions: {
+    bar: {
+      horizontal: false,
+      columnWidth: "55%",
+      endingShape: "rounded",
+    },
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  colors:["#0060A3"],
+  stroke: {
+    show: true,
+    width: 2,
+    colors: ["transparent"],
+  },
+  xaxis: {
+    categories: ["Hipertensi", "Diabetes", "Gangguan Kecemasan", "A04.9", "A05.9"],
+  },
+  yaxis: {
+    title: {},
+  },
+  fill: {
+    opacity: 1,
+  },
+  tooltip: {
+    y: {
+      formatter: function (val) {
+        return + val + " Diagnosis";
+      },
+    },
+  },
+};
+
+var chart3 = new ApexCharts(document.querySelector("#diagram-chart"), options3);
+
+chart3.render();
