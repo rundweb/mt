@@ -55,6 +55,7 @@
   flex-direction: column;
   box-shadow: var(--box-shadow);
   height: 100vh;
+  z-index: 1000;
 }
 
 .dashboard-logo {
@@ -144,6 +145,10 @@
   justify-content: flex-end;
   padding: 24px 32px;
   gap: 24px;
+  position: fixed;
+  width: inherit;
+  z-index: 999;
+  box-shadow: var(--box-shadow-primary);
 }
 
 .profile {
@@ -188,28 +193,28 @@
   font-weight: var(--f400);
 }
 
-
 .notifications img {
   width: 34px;
   height: 34px;
   color: var(--collor-dark-secondary);
 }
 
-.content-real{
+.content-real {
   display: flex;
   flex-direction: column;
+  margin-top: 95px;
   width: 100%;
   padding: 16px 32px;
 }
 
-.button-dashboard{
+.button-dashboard {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 14px;
 }
 
-button{
+button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -222,7 +227,7 @@ button{
   font-size: 14px;
 }
 
-.btn-export{
+.btn-export {
   background-color: var(--collor-blue) !important;
   color: var(--collor-bg-white) !important;
   border: none !important;
@@ -230,23 +235,23 @@ button{
   border-radius: var(--border29);
 }
 
-.btn-export i{
+.btn-export i {
   font-size: 20px !important;
 }
 
-.content-data{
+.content-data {
   width: 100%;
   margin-top: 24px;
 }
 
-.content-data-list{
+.content-data-list {
   display: flex;
   align-items: center;
   gap: 10px;
   justify-content: space-between;
 }
 
-.content-data-link{
+.content-data-link {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -258,33 +263,32 @@ button{
   box-shadow: var(--box-shadow-secondary);
 }
 
-.text-content-data p{
+.text-content-data p {
   color: var(--collor-dark-thrid);
   font-size: 16px;
 }
 
-.text-content-data h3{
+.text-content-data h3 {
   color: var(--collor-dark-secondary);
   font-size: 24px;
 }
 
-.kunjungan{
+.kunjungan {
   border-top: 4px solid var(--collor-blue);
 }
-.jalan{
+.jalan {
   border-top: 4px solid var(--collor-green);
 }
-.inap{
+.inap {
   border-top: 4px solid var(--collor-orange);
 }
-.igd{
+.igd {
   border-top: 4px solid var(--collor-red);
 }
 
-
 /* style chart */
 
-.content-chart{
+.content-chart {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -292,7 +296,7 @@ button{
   padding: 24px 0;
 }
 
-.content-list{
+.content-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -304,14 +308,37 @@ button{
   padding: 20px 30px;
 }
 
-.content-title p{
+.content-title p {
   color: var(--collor-dark-thrid);
   font-size: 16px;
   font-weight: var(--f400);
 }
 
-.content-title h4{
+.content-title h4 {
   font-weight: var(--f700);
   color: var(--collor-dark);
   font-size: 24px;
+}
+
+.chart-diagnosis {
+  padding: 0px 0;
+  width: 100%;
+}
+
+.diagnosis-title p {
+  color: var(--collor-dark-thrid);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.diagnosis-title h3 {
+  color: #1E1B39;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 20px;
 }
